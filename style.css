@@ -1,0 +1,284 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #121212;
+}
+
+.wrapper {
+    width: 1000px;
+    max-width: 92%;
+    margin: auto;
+}
+
+nav {
+    background-color: #050500;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    gap: 15px;
+}
+
+.logo a {
+    color: #f8f6f5;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu ul li a {
+    color: #f4f2f2;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.ikon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ikon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ikon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+.order,
+.reservasi {
+    background-color: #f0960e;
+    color: white;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 35px 0px;
+}
+
+.kolom {
+    flex: 1;
+}
+
+.kolom h2 {
+    color: #c28b4c;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.kolom p {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.kolom .deskripsi {
+    color: #555555;
+}
+
+.gambar {
+    width: 48%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0px 8px 18px rgba(246, 182, 44, 0.3);
+}
+
+.judul {
+    text-align: center;
+    color: #c28b4c;
+    font-size: 25px;
+    margin: 10px 0px 25px;
+    border-top: 1px solid #cccccc;
+    padding-top: 12px;
+}
+
+.daftar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+
+.katalog {
+    background-color: #f8e5bd;
+    width: 30%;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.katalog img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.katalog h3 {
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.katalog p {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #11110b;
+    color: white;
+    padding: 30px 5%;
+    font-size: 11px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    margin-bottom: 6px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    nav .wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 0px;
+        gap: 12px;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .menu {
+        width: 100%;
+        order: 3;
+    }
+
+    .menu ul {
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .menu ul li a {
+        font-size: 11px;
+    }
+
+    .ikon {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .ikon img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    .order {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .kolom h2 {
+        font-size: 30px;
+    }
+
+    .kolom p {
+        font-size: 13px;
+    }
+
+    .gambar {
+        width: 100%;
+        height: 230px;
+    }
+
+    .daftar-menu {
+        gap: 12px;
+    }
+
+    .katalog {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .katalog img {
+        height: 180px;
+    }
+
+    .katalog h3 {
+        font-size: 15px;
+    }
+
+    .katalog p {
+        font-size: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+}
